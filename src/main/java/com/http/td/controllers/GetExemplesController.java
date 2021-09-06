@@ -9,7 +9,7 @@ import org.springframework.web.servlet.ModelAndView;
 @RestController
 public class GetExemplesController {
 	@GetMapping("/api")
-	@ResponseBody
+	@ResponseBody //facultatif
 	public String getFoos(@RequestParam(name = "myid",required = false,defaultValue = "abcd") String id) {
 	return "ID: " + id;
 	}
